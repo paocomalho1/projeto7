@@ -1,0 +1,15 @@
+@use "./componetes";
+@use "./utilitarios" as *;
+
+body{
+    font-size: 16px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 100%;
+    box-sizing: border-box;
+    @include celular{
+        margin-left: 0%;
+        margin-right: 0%;  
+    }
+
+}

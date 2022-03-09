@@ -1,0 +1,109 @@
+@use "../utilitarios/" as *;
+
+.light-box{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    visibility: hidden;
+    z-index: 2;
+    &__conteiner-x{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 35%;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+
+    }
+    &__x{
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+
+    &__conteiner-img{
+        width: 35%;
+        border-radius: 10px;
+        height: 430px;
+        background: url(../images/image-product-1.jpg) no-repeat center / cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+    }
+    &__previous{
+        padding: 1rem;
+        background-color: $branco;
+        border-radius: 50%;
+        position: relative;
+        right: 1.2rem;
+        @include celular{
+            display: block;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+    &__next{
+        padding: 1rem;
+        background-color: $branco;
+        border-radius: 50%;
+        position: relative;
+        left: 1.2rem;
+        @include celular{
+            display: block;
+        }
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__conteiner-imgs{
+        padding: 2rem;
+
+    }
+    &__imgs{
+        width: 75px;
+        border-radius: 10px;
+        margin-right: 1.5rem;
+        &:last-child{
+            margin-right: 0rem;
+        }
+        &:hover{
+            opacity: 0.4;
+            cursor: pointer;
+        }
+
+    }
+}
+.prioritario1{
+    background-image: url(../images/image-product-1.jpg) !important;
+}
+.prioritario2{
+    background-image: url(../images/image-product-2.jpg) !important;
+}
+.prioritario3{
+    background-image: url(../images/image-product-3.jpg) !important;
+}
+.prioritario4{
+    background-image: url(../images/image-product-4.jpg) !important;
+}
+.ativo{
+    opacity: 0.4;
+    border: $laranja-1 solid 3px;
+    box-sizing: border-box;
+}
+.displaynone{
+    display: none !important;
+}
+.displayblock{
+    display: block !important;
+}

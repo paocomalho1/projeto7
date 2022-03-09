@@ -1,0 +1,32 @@
+//colors
+
+$laranja-1: hsl(26, 100%, 55%);
+$laranja-2: hsl(25, 100%, 94%);
+
+//neutro
+
+$azul-dark: hsl(220, 13%, 13%);
+$azul-escuro: hsl(219, 9%, 45%);
+$azul-cinza: hsl(220, 14%, 75%);
+$azul-cinza-claro: hsl(223, 64%, 98%);
+$branco: hsl(0, 0%, 100%);
+$preto:hsl(0, 0%, 0%);
+
+//fonte
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+
+
+
+@mixin Kumbh-Sans-400{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+
+}
+
+@mixin Kumbh-Sans-700{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+
+}

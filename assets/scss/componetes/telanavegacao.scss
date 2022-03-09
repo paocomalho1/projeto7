@@ -1,0 +1,66 @@
+@use "../utilitarios" as *;
+
+.cabecalho{
+    &__tela{
+        height: calc(100vh - 3rem);
+        width: calc(20% - 3rem);
+        background-color: $branco;
+        position: fixed;
+        z-index: 2;
+        bottom: 0;
+        left: -80%;
+        padding: 1.5rem;
+        @include celular{
+            width: calc(70% - 3rem);
+        }
+    }
+    &__x{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    &__itens-tela{
+        margin-top: 3rem;
+
+    }
+    &__item-tela{
+        margin-bottom: 1.5rem;
+
+    }
+    &__link-tela{
+        text-decoration: none;
+        @include Kumbh-Sans-700;
+        color: $azul-dark;
+        
+    }
+}
+.slide-in{
+    animation: slide-in 300ms ease-in-out forwards;
+}
+.slide-out{
+    animation: slide-out 300ms ease-in-out forwards;
+}
+.overlay{
+    height: 100vh;
+    width: 100%;
+    background-color: $preto;
+    position: fixed;
+    opacity: 0;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    z-index: 2;
+    
+}
+.appear{
+    animation: appear 300ms ease-in-out forwards;
+}
+.disappear{
+    animation: disappear 300ms ease-in-out forwards;
+}
+.appearOpacity1{
+    animation: appearOpacity1 300ms ease-in-out forwards;
+}
+.disappearOpacity0{
+    animation: disappearOpacity0 300ms ease-in-out forwards;
+}
