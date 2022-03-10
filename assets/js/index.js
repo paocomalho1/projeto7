@@ -10,6 +10,8 @@ previousCorpo.addEventListener("click", () => {
 })
 
 
+
+
 function tela(){
     const tela = document.querySelector(".cabecalho__tela")
     const overlay = document.querySelector(".overlay")
@@ -186,7 +188,7 @@ function carroselPrevious(){
 
 
 }
-function basketOpen(){
+function basket(){
     const basket = document.querySelector(".basket")
     if(!basket.classList.contains("appearOpacity1")){
         basket.classList.remove("disappearOpacity0")

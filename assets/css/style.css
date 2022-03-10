@@ -882,7 +882,7 @@
   align-items: flex-end;
   visibility: hidden;
   position: relative;
-  top: 50px;
+  top: 40px;
   z-index: 2;
 }
 .basket__conteiner {
@@ -896,19 +896,25 @@
 @media only screen and (max-width: 960px) {
   .basket__conteiner {
     top: 10%;
-    left: 4%;
+    left: 4.5%;
     width: calc(100vw - 2rem);
   }
 }
 .basket__conteiner-titulo {
   padding: 1rem;
   border-bottom: #b6bcc8 solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .basket__titulo {
   color: #1d2025;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 700;
   font-size: 1.2rem;
+}
+.basket__x:hover {
+  cursor: pointer;
 }
 .basket__conteiner-texto {
   display: flex;
@@ -934,6 +940,7 @@
 .basket__img {
   height: 50px;
   margin-right: 1rem;
+  margin-left: 0.4rem;
 }
 .basket__compra-texto {
   font-family: "Kumbh Sans", sans-serif;
@@ -987,6 +994,7 @@
   align-items: center;
   justify-content: center;
   height: 50px;
+  margin-left: 0.4rem;
 }
 .basket__botao:hover {
   opacity: 0.7;
