@@ -4,12 +4,7 @@ previousCorpo.addEventListener("click", () => {
     if(!imgPrincipal.classList.contains("carrosel1Img1Next") && !imgPrincipal.classList.contains("carrosel2Img1Next") && !imgPrincipal.classList.contains("carrosel3Img1Next") && !imgPrincipal.classList.contains("carrosel1Img1Previous") && !imgPrincipal.classList.contains("carrosel2Img1Previous") && !imgPrincipal.classList.contains("carrosel3Img1Previous")){
         return
     }else{
-        if(imgPrincipal.classList.contains("carrosel1Img1Previous")){
-            return
-
-        }else{
-            setTimeout(() => {displaynone()}, 1000)
-        }
+        setTimeout(() => {displaynone()}, 1000)
         
     }
 })
