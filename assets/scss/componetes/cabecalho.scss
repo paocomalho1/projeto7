@@ -45,6 +45,9 @@
     }
     &__item{
         margin-right: 2rem;
+        display: block;
+        position: relative;
+        
 
 
     }
@@ -55,9 +58,11 @@
         &:hover{
             color: $azul-dark;
             &::after{
-                position: relative;
+                position: absolute;
+                right: 0;
+                left: 0;
                 display: block;
-                top: 46px;
+                top: 61px;
                 content: "";
                 height: 4px;
                 background-color: $laranja-1;

@@ -238,6 +238,8 @@
 }
 .cabecalho__item {
   margin-right: 2rem;
+  display: block;
+  position: relative;
 }
 .cabecalho__link {
   text-decoration: none;
@@ -249,9 +251,11 @@
   color: #1d2025;
 }
 .cabecalho__link:hover::after {
-  position: relative;
+  position: absolute;
+  right: 0;
+  left: 0;
   display: block;
-  top: 46px;
+  top: 61px;
   content: "";
   height: 4px;
   background-color: #ff7d1a;
