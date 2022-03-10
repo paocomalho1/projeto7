@@ -900,8 +900,7 @@
 @media only screen and (max-width: 960px) {
   .basket__conteiner {
     top: 10%;
-    left: 4.5%;
-    width: calc(100vw - 2rem);
+    right: 4.5%;
   }
 }
 .basket__conteiner-titulo {
