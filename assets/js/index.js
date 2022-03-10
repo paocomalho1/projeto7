@@ -4,7 +4,13 @@ previousCorpo.addEventListener("click", () => {
     if(!imgPrincipal.classList.contains("carrosel1Img1Next") && !imgPrincipal.classList.contains("carrosel2Img1Next") && !imgPrincipal.classList.contains("carrosel3Img1Next") && !imgPrincipal.classList.contains("carrosel1Img1Previous") && !imgPrincipal.classList.contains("carrosel2Img1Previous") && !imgPrincipal.classList.contains("carrosel3Img1Previous")){
         return
     }else{
-        setTimeout(() => {displaynone()}, 1000)
+        if(imgPrincipal.classList.contains("carrosel1Img1Previous")){
+            return
+
+        }else{
+            setTimeout(() => {displaynone()}, 1000)
+        }
+        
     }
 })
 
@@ -231,13 +237,18 @@ function previouCelular(){
     const imgPrincipal2 = document.querySelector(".corpo__img2")
     const next = document.querySelector(".corpo__next")
     const previous = document.querySelector(".corpo__previous")
-    if(!imgPrincipal.classList.contains("carrosel1Img1Next") && !imgPrincipal.classList.contains("carrosel2Img1Next") && !imgPrincipal.classList.contains("carrosel3Img1Next") && !imgPrincipal.classList.contains("carrosel1Img1Previous") && !imgPrincipal.classList.contains("carrosel2Img1Previous") && !imgPrincipal.classList.contains("carrosel3Img1Previous")){
+    if(imgPrincipal.classList.contains("carrosel1Img1Previous")){
         return
+
     }
-    
     if(imgPrincipal.classList.contains("displaynone")){
         fix()
+        
 
+    }
+    if(!imgPrincipal.classList.contains("carrosel1Img1Next") && !imgPrincipal.classList.contains("carrosel2Img1Next") && !imgPrincipal.classList.contains("carrosel3Img1Next") && !imgPrincipal.classList.contains("carrosel1Img1Previous") && !imgPrincipal.classList.contains("carrosel2Img1Previous") && !imgPrincipal.classList.contains("carrosel3Img1Previous")){
+        return
+        
     }
     else if(imgPrincipal.classList.contains("carrosel1Img1Next") || imgPrincipal.classList.contains("carrosel2Img1Previous")){
         imgPrincipal.classList.remove("carrosel2Img1Previous")
@@ -299,7 +310,7 @@ function nextCelular(){
         imgPrincipal.classList.remove("carrosel3Img1Previous")
         imgPrincipal2.classList.remove("carrosel3Img2Previous")
         imgPrincipal.classList.remove("carrosel2Img1Next")
-        imgPrincipal2.classList.remove("carrosel3Img2Next")
+        imgPrincipal2.classList.remove("carrosel2Img2Next")
         imgPrincipal.classList.add("carrosel3Img1Next")
         imgPrincipal2.classList.add("carrosel3Img2Next")
         next.classList.add("disativo")
