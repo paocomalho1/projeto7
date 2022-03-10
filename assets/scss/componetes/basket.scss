@@ -37,8 +37,12 @@
         font-size: 1.2rem
     }
     &__x{
+        background: url(../images/icon-close.svg) no-repeat center / cover;
+        height: 15px;
+        width: 15px;
         &:hover{
             cursor: pointer;
+            background: url(../images/icon-closeOrange.svg);
         }
     }
     &__conteiner-texto{

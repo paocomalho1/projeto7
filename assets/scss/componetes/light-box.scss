@@ -22,8 +22,12 @@
 
     }
     &__x{
+        background: url(../images/icon-close.svg) no-repeat center / cover;
+        height: 15px;
+        width: 15px;
         &:hover{
             cursor: pointer;
+            background: url(../images/icon-closeOrange.svg);
         }
 
     }
@@ -40,8 +44,9 @@
 
     }
     &__previous{
-        padding: 1rem;
-        background-color: $branco;
+        padding: 1.5rem;
+        background: url(../images/icon-previous.svg) no-repeat center;
+        background-color: $branco !important;
         border-radius: 50%;
         position: relative;
         right: 1.2rem;
@@ -50,12 +55,16 @@
         }
         &:hover{
             cursor: pointer;
+            background-color: $branco;
+            background: url(../images/icon-previousOrange.svg) no-repeat center;
         }
 
     }
     &__next{
-        padding: 1rem;
-        background-color: $branco;
+        
+        padding: 1.5rem;
+        background: url(../images/icon-next.svg) no-repeat center;
+        background-color: $branco !important;
         border-radius: 50%;
         position: relative;
         left: 1.2rem;
@@ -64,6 +73,8 @@
         }
         &:hover{
             cursor: pointer;
+            background-color: $branco;
+            background: url(../images/icon-nextOrange.svg) no-repeat center;
         }
     }
     &__conteiner-imgs{
